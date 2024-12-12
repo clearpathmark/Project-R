@@ -1,0 +1,31 @@
+{
+  "api_endpoints": {
+    "base_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+    "search_endpoint": "/esearch.fcgi",
+    "fetch_endpoint": "/efetch.fcgi",
+    "summary_endpoint": "/esummary.fcgi"
+  },
+  "search_parameters": {
+    "retmax": 100,
+    "retmode": "json",
+    "db": "pubmed",
+    "date_range": {
+      "start": "2015",
+      "end": "2024"
+    },
+    "search_terms": [
+      {
+        "category": "diabetes_tech",
+        "terms": ["CGM", "insulin pump", "artificial pancreas", "closed loop insulin"]
+      },
+      {
+        "category": "region",
+        "terms": ["Europe", "European Union", "EU"]
+      },
+      {
+        "category": "study_type",
+        "terms": ["Clinical Trial", "Meta-Analysis", "Systematic Review"]
+      }
+    ]
+  }
+}
