@@ -1,31 +1,249 @@
 {
-    "api_endpoints": {
-      "base_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
-      "search_endpoint": "/esearch.fcgi",
-      "fetch_endpoint": "/efetch.fcgi",
-      "summary_endpoint": "/esummary.fcgi"
+  "api_endpoints": {
+    "base_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+    "search_endpoint": "/esearch.fcgi",
+    "fetch_endpoint": "/efetch.fcgi",
+    "summary_endpoint": "/esummary.fcgi"
+  },
+  "search_parameters": {
+    "retmax": 1000,
+    "retmode": "json",
+    "db": "pubmed",
+    "date_range": {
+      "start": "2015",
+      "end": "2024"
     },
-    "search_parameters": {
-      "retmax": 100,
-      "retmode": "json",
-      "db": "pubmed",
-      "date_range": {
-        "start": "2015",
-        "end": "2024"
+    "search_terms": [
+      {
+        "category": "diabetes_tech",
+        "terms": [
+          "CGM",
+          "continuous glucose monitoring",
+          "flash glucose monitoring",
+          "FGM",
+          "insulin pump",
+          "patch pump",
+          "smart pen",
+          "insulin pen",
+          "artificial pancreas",
+          "hybrid closed loop",
+          "automated insulin delivery",
+          "closed loop insulin",
+          "predictive low glucose suspend",
+          "smart insulin delivery",
+          "digital diabetes",
+          "remote monitoring diabetes",
+          "telemedicine diabetes",
+          "mobile health diabetes",
+          "mHealth diabetes",
+          "digital therapeutic diabetes",
+          "decision support diabetes",
+          "smart glucose meter",
+          "connected diabetes care",
+          "wearable diabetes technology",
+          "diabetes data analytics",
+          "machine learning diabetes",
+          "AI diabetes management"
+        ]
       },
-      "search_terms": [
-        {
-          "category": "diabetes_tech",
-          "terms": ["CGM", "insulin pump", "artificial pancreas", "closed loop insulin"]
-        },
-        {
-          "category": "region",
-          "terms": ["Europe", "European Union", "EU"]
-        },
-        {
-          "category": "study_type",
-          "terms": ["Clinical Trial", "Meta-Analysis", "Systematic Review"]
-        }
+      {
+        "category": "clinical_focus",
+        "terms": [
+          "glycemic control",
+          "HbA1c reduction",
+          "time in range",
+          "hypoglycemia prevention",
+          "glucose variability",
+          "patient reported outcomes",
+          "quality of life",
+          "treatment satisfaction",
+          "diabetes burden",
+          "medication adherence",
+          "therapy optimization",
+          "real world evidence",
+          "cost effectiveness",
+          "clinical outcomes",
+          "metabolic control",
+          "diabetes complications",
+          "cardiovascular outcomes",
+          "blood glucose control",
+          "insulin requirements",
+          "glucose patterns",
+          "diabetes management"
+        ]
+      },
+      {
+        "category": "population",
+        "terms": [
+          "type 1 diabetes",
+          "T1D",
+          "type 2 diabetes",
+          "T2D",
+          "pediatric diabetes",
+          "adolescent diabetes",
+          "adult diabetes",
+          "elderly diabetes",
+          "pregnancy diabetes",
+          "gestational diabetes",
+          "diabetes mellitus",
+          "insulin dependent",
+          "non-insulin dependent",
+          "juvenile diabetes",
+          "adult-onset diabetes",
+          "brittle diabetes",
+          "insulin resistance",
+          "prediabetes"
+        ]
+      }
+    ]
+  },
+  "technologies": [
+    {
+      "name": "CGM",
+      "terms": [
+        "continuous glucose monitor",
+        "CGM",
+        "flash glucose",
+        "FGM",
+        "glucose sensor",
+        "interstitial glucose",
+        "glucose monitoring"
+      ]
+    },
+    {
+      "name": "Insulin Pumps",
+      "terms": [
+        "insulin pump",
+        "patch pump",
+        "pump therapy",
+        "CSII",
+        "continuous subcutaneous insulin infusion"
+      ]
+    },
+    {
+      "name": "Closed Loop",
+      "terms": [
+        "artificial pancreas",
+        "closed loop",
+        "automated insulin delivery",
+        "hybrid closed loop",
+        "predictive suspend"
+      ]
+    },
+    {
+      "name": "Smart Pens",
+      "terms": [
+        "smart pen",
+        "connected pen",
+        "digital insulin pen",
+        "bluetooth pen",
+        "smart insulin delivery"
+      ]
+    },
+    {
+      "name": "Digital Health",
+      "terms": [
+        "digital health",
+        "telemedicine",
+        "remote monitoring",
+        "mobile health",
+        "mHealth",
+        "digital therapeutic",
+        "decision support",
+        "connected care"
       ]
     }
+  ],
+  "countries": [
+    "United Kingdom",
+    "UK",
+    "England",
+    "Scotland",
+    "Wales",
+    "Northern Ireland",
+    "Germany",
+    "France",
+    "Italy",
+    "Spain",
+    "Netherlands",
+    "Belgium",
+    "Sweden",
+    "Denmark",
+    "Norway",
+    "Finland",
+    "Switzerland",
+    "Austria",
+    "Poland",
+    "Ireland",
+    "Portugal",
+    "Greece",
+    "Czech Republic",
+    "Hungary",
+    "Romania"
+  ],
+  "outcome_measures": {
+    "glycemic": [
+      "HbA1c",
+      "time in range",
+      "TIR",
+      "glucose variability",
+      "hypoglycemia",
+      "hyperglycemia",
+      "mean glucose",
+      "standard deviation",
+      "coefficient of variation"
+    ],
+    "clinical": [
+      "complications",
+      "cardiovascular",
+      "mortality",
+      "hospitalization",
+      "emergency",
+      "adverse events"
+    ],
+    "patient_reported": [
+      "quality of life",
+      "satisfaction",
+      "burden",
+      "adherence",
+      "compliance",
+      "acceptance"
+    ],
+    "economic": [
+      "cost effectiveness",
+      "cost utility",
+      "resource utilization",
+      "healthcare costs",
+      "economic burden"
+    ]
+  },
+  "study_design_keywords": {
+    "RCT": [
+      "randomized",
+      "randomised",
+      "controlled trial",
+      "double blind",
+      "single blind",
+      "placebo"
+    ],
+    "observational": [
+      "cohort",
+      "prospective",
+      "retrospective",
+      "case control",
+      "cross sectional"
+    ],
+    "meta_analysis": [
+      "meta analysis",
+      "systematic review",
+      "literature review",
+      "evidence synthesis"
+    ],
+    "real_world": [
+      "real world evidence",
+      "real world data",
+      "registry",
+      "database analysis"
+    ]
   }
+}
