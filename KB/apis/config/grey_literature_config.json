@@ -1,0 +1,60 @@
+{
+  "project_name": "European Grey Literature Collector",
+  "version": "1.0.0",
+  "sources": {
+    "european_commission": {
+      "base_url": "https://health.ec.europa.eu/publications",
+      "categories": [
+        "diabetes",
+        "medical-devices",
+        "healthcare-systems"
+      ]
+    },
+    "nhs_evidence": {
+      "base_url": "https://evidence.nhs.uk/search",
+      "document_types": [
+        "technology-assessments",
+        "guidance",
+        "evidence-summaries"
+      ]
+    },
+    "ema_reports": {
+      "base_url": "https://www.ema.europa.eu/en/medicines",
+      "categories": [
+        "diabetes",
+        "glucose-monitoring",
+        "insulin"
+      ]
+    }
+  },
+  "search_terms": {
+    "diabetes_technology": [
+      "continuous glucose monitoring",
+      "insulin pump",
+      "artificial pancreas",
+      "digital health diabetes",
+      "diabetes technology"
+    ],
+    "healthcare_delivery": [
+      "diabetes care pathway",
+      "diabetes management",
+      "diabetes care model",
+      "diabetes service delivery"
+    ],
+    "policy": [
+      "diabetes policy",
+      "diabetes strategy",
+      "diabetes framework",
+      "diabetes guidelines"
+    ]
+  },
+  "date_range": {
+    "start": 2015,
+    "end": 2024
+  },
+  "output_formats": [
+    "pdf",
+    "html",
+    "doc"
+  ]
+}
