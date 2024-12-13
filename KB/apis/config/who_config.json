@@ -1,0 +1,124 @@
+{
+    "project_name": "WHO Data Analytics Connector",
+    "version": "1.0.0",
+    "api_endpoints": {
+        "base_url": "https://ghoapi.azureedge.net/api",
+        "global_health_observatory": "/global-health-observatory",
+        "regional_health_observatory": "/regional-health",
+        "health_statistics": "/health-statistics"
+    },
+    "search_parameters": {
+        "date_range": {
+            "start": 2000,
+            "end": 2024
+        },
+        "search_terms": [
+            {
+                "category": "diabetes_prevalence",
+                "terms": [
+                    "diabetes prevalence",
+                    "type 1 diabetes",
+                    "type 2 diabetes",
+                    "diabetes incidence",
+                    "gestational diabetes",
+                    "childhood diabetes",
+                    "adult-onset diabetes"
+                ]
+            },
+            {
+                "category": "healthcare_infrastructure",
+                "terms": [
+                    "diabetes care",
+                    "healthcare resources",
+                    "medical infrastructure",
+                    "diabetes clinics",
+                    "endocrinology services"
+                ]
+            },
+            {
+                "category": "risk_factors",
+                "terms": [
+                    "obesity",
+                    "insulin resistance",
+                    "metabolic syndrome",
+                    "genetic predisposition",
+                    "sedentary lifestyle",
+                    "unhealthy diet"
+                ]
+            }
+        ]
+    },
+    "countries": [
+        { "name": "Albania", "code": "ALB" },
+        { "name": "Andorra", "code": "AND" },
+        { "name": "Austria", "code": "AUT" },
+        { "name": "Belarus", "code": "BLR" },
+        { "name": "Belgium", "code": "BEL" },
+        { "name": "Bosnia and Herzegovina", "code": "BIH" },
+        { "name": "Bulgaria", "code": "BGR" },
+        { "name": "Croatia", "code": "HRV" },
+        { "name": "Cyprus", "code": "CYP" },
+        { "name": "Czech Republic", "code": "CZE" },
+        { "name": "Denmark", "code": "DNK" },
+        { "name": "Estonia", "code": "EST" },
+        { "name": "Finland", "code": "FIN" },
+        { "name": "France", "code": "FRA" },
+        { "name": "Germany", "code": "DEU" },
+        { "name": "Greece", "code": "GRC" },
+        { "name": "Hungary", "code": "HUN" },
+        { "name": "Iceland", "code": "ISL" },
+        { "name": "Ireland", "code": "IRL" },
+        { "name": "Italy", "code": "ITA" },
+        { "name": "Kazakhstan", "code": "KAZ" },
+        { "name": "Kyrgyzstan", "code": "KGZ" },
+        { "name": "Latvia", "code": "LVA" },
+        { "name": "Lithuania", "code": "LTU" },
+        { "name": "Luxembourg", "code": "LUX" },
+        { "name": "Malta", "code": "MLT" },
+        { "name": "Moldova", "code": "MDA" },
+        { "name": "Monaco", "code": "MCO" },
+        { "name": "Montenegro", "code": "MNE" },
+        { "name": "Netherlands", "code": "NLD" },
+        { "name": "North Macedonia", "code": "MKD" },
+        { "name": "Norway", "code": "NOR" },
+        { "name": "Poland", "code": "POL" },
+        { "name": "Portugal", "code": "PRT" },
+        { "name": "Romania", "code": "ROU" },
+        { "name": "Russian Federation", "code": "RUS" },
+        { "name": "San Marino", "code": "SMR" },
+        { "name": "Serbia", "code": "SRB" },
+        { "name": "Slovakia", "code": "SVK" },
+        { "name": "Slovenia", "code": "SVN" },
+        { "name": "Spain", "code": "ESP" },
+        { "name": "Sweden", "code": "SWE" },
+        { "name": "Switzerland", "code": "CHE" },
+        { "name": "Tajikistan", "code": "TJK" },
+        { "name": "Turkey", "code": "TUR" },
+        { "name": "Turkmenistan", "code": "TKM" },
+        { "name": "Ukraine", "code": "UKR" },
+        { "name": "United Kingdom", "code": "GBR" },
+        { "name": "Uzbekistan", "code": "UZB" }
+    ],
+    "technologies": [
+        {
+            "name": "Data Visualization",
+            "terms": [
+                "dashboard",
+                "charts",
+                "infographics",
+                "interactive maps",
+                "real-time analytics"
+            ]
+        },
+        {
+            "name": "Data Integration",
+            "terms": [
+                "ETL",
+                "data pipelines",
+                "data warehouses",
+                "API integrations",
+                "data lakes"
+            ]
+        }
+    ]
+}
