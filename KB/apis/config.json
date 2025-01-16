@@ -1,0 +1,32 @@
+{
+  "api_endpoints": {
+    "pubmed": {
+      "base_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+      "search_endpoint": "/esearch.fcgi",
+      "fetch_endpoint": "/efetch.fcgi",
+      "parameters": {
+        "db": "pubmed",
+        "retmode": "json",
+        "retmax": 100
+      }
+    },
+    "who_diabetes": {
+      "base_url": "https://gateway.euro.who.int/en/datasets",
+      "endpoint": "/diabetes-country-profiles-2016"
+    }
+  },
+  "search_parameters": {
+    "date_range": {
+      "start": "2015",
+      "end": "2024"
+    },
+    "keywords": [
+      "Type 1 diabetes",
+      "Type 2 diabetes",
+      "Europe",
+      "CGM",
+      "Insulin Pump",
+      "Unmet Needs"
+    ]
+  }
+}
